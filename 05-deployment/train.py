@@ -10,11 +10,11 @@ from sklearn.linear_model import LogisticRegression
 # parameters
 
 C=0.01
-output_file=f"05-deployment/model_C={C}.bin"
+output_file=f"model_C={C}.bin"
 
 # data prepration
 
-data="05-deployment/customer.csv"
+data="customer.csv"
 df=pd.read_csv(data)
 
 df.columns=df.columns.str.lower().str.replace(" ","_")
